@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>	
+	<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+      <title>Search | Tickets for Troops</title>                                                                                                
+
+		
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+		<link rel="stylesheet" href="/css/normalize.css">
+		<link rel="stylesheet" href="/css/main.css">
+		<link rel="stylesheet" href="/css/responsive.css">
+		
+		<link href='https://fonts.googleapis.com/css?family=Raleway:200,800,900,700,400' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+		
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		
+		<script>window.jQuery || document.write('<script src="/scripts/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+	
+		<!--[if lte IE 9]>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				if ($.browser.msie  && parseInt($.browser.version, 10) === 8) {
+					$("body").addClass("ie8");
+				}else if ($.browser.msie  && parseInt($.browser.version, 10) === 7) {
+					$("body").addClass("ie7");
+				}else if ($.browser.msie  && parseInt($.browser.version, 10) === 9) {
+					$("body").addClass("ie9");
+				}
+			});
+		</script>
+		<![endif]-->
+		
+		<script src="/scripts/vendor/modernizr-2.6.2.min.js"></script>
+		<script src="/scripts/vendor/selectivizr-min.js"></script>
+	    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+
+		
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+		
+
+		
+    </head>
+	
+<body class="Search">
+		<div class="wrapper">
+		
+				
+	<header>		
+		<div id="top-login">
+			<div>
+				<h2>Login</h2>
+<p>All registered members of Tickets for Troops can login here.</p>				
+	<form class="login-form " method="post">
+			<fieldset>
+				<p>
+					<label for="name"><strong>Email Address: </strong><input id="name" name="name" type="text" value="" /></label>
+				</p>
+				<p>
+					<label for="password"><strong>Password: </strong><input id="password" name="password" type="password" /></label>
+				</p>
+		  
+				<div class="form-actions">
+					<input name="submit" type="submit" value="Login" class="login-submit" />
+					<input type="hidden" value="true" name="loginsubmit" id="loginsubmit" />
+					<label for="rememberMe">
+						<input id="rememberMe" name="rememberMe" title="Remember Me" type="checkbox"  />
+						Remember Me
+					</label>
+					<a href="/forgot-password" title="Forgot your password?">Forgot your password?</a>
+				</div>
+			</fieldset>
+	</form>
+
+			</div>
+			<div>
+				<h2>Register</h2>
+<p><strong>Register for free access to thousands of tickets donated especially for the brave men &amp; women of our Armed Forces.</strong><br /><br />All serving members of HM Forces, and all those medically discharged from the Forces since the commencement of military action in Afghanistan in 2001 are eligible to register for tickets with Tickets for Troops. See <a href="/how-it-works.aspx" title="How it works"><strong>how it works</strong></a> for more info.</p>					
+				<a href="/register" title="Register Now" class="register-now">Register Now</a>
+			</div>
+		</div>
+		<div id="shopping-basket">
+			<h2>Shopping Basket</h2>
+			<div class="basket-columns">
+				<span class="first-item">Item</span>
+				<span class="second-item">QTY</span>
+				<span class="third-item">Price</span>
+				<span class="fourth-item">Total</span>
+				<span class="fifth-item">&nbsp;</span>
+			</div>
+		</div>
+		
+		
+		<div class="header">
+				<span class="login-toggle">Login/<br />Register</span>	
+	
+			<a href="#" class="cart-toggle" title="Toggle Cart"><span></span><label>Basket</label> <em>[0]</em></a>
+
+
+			<a href="/" title="Tickets For Troops" class="logo">Tickets For Troops</a>
+			
+				<ul id="top-nav">
+						<li ><a href="/cancellation.aspx" title="Cancellation">Cancellation</a></li>	
+						<li ><a href="/contact.aspx" title="Contact">Contact</a></li>	
+						<li ><a href="/news.aspx" title="News">News</a></li>	
+						<li ><a href="/supporters.aspx" title="Supporters">Supporters</a></li>	
+						<li ><a href="/gallery.aspx" title="Gallery">Gallery</a></li>	
+						<li ><a href="/about-us.aspx" title="About Us">About Us</a></li>	
+						<li ><a href="/faqs.aspx" title="FAQs">FAQs</a></li>	
+						<li ><a href="/how-it-works.aspx" title="How it works">How it works</a></li>	
+				</ul>
+			
+			<form method="get" action="/search" class="search-form ">
+				<input type="text" id="q" name="q" value="rock for heroes" />
+				<input type="submit" value="Search" />
+				<a href="/search?ref=tf" title="Ticket Finder">Ticket Finder</a>
+			</form>
+		</div>
+			<nav>
+				<ul>
+						<li class="home "><a href="/home.aspx" title="Home">Home</a></li>	
+						<li class="sports "><a href="/sports.aspx" title="Sports">Sports</a></li>	
+						<li class="theatre "><a href="/theatre.aspx" title="Theatre">Theatre</a></li>	
+						<li class="music "><a href="/music.aspx" title="Music">Music</a></li>	
+						<li class="comedy "><a href="/comedy.aspx" title="Comedy">Comedy</a></li>	
+						<li class="other "><a href="/other.aspx" title="Other">Other</a></li>	
+				</ul>
+			</nav>
+	
+		<div class="mobile-only mobile-controls">
+				<em class="mobile-toggle"></em>
+					<em class="mobile-search-toggle"></em>
+					
+		</div>		
+				
+				<ul class="mobile-navigation">
+						<li class=' '>
+									<a href="/home.aspx" title="Home">Home</a>
+						</li>	
+						<li class='  has-child'>
+									<span class="">Sports<em></em></span>
+									<ul>
+											<li class=""><a href="/sports/football.aspx" title="Football">Football</a></li>
+											<li class=""><a href="/sports/rugby.aspx" title="Rugby">Rugby</a></li>
+											<li class=""><a href="/sports/tennis.aspx" title="Tennis">Tennis</a></li>
+											<li class=""><a href="/sports/cricket.aspx" title="Cricket">Cricket</a></li>
+											<li class=""><a href="/sports/horseracing.aspx" title="Horseracing">Horseracing</a></li>
+											<li class=""><a href="/sports/other.aspx" title="Other">Other</a></li>
+											<li><a href="/sports.aspx" title="Sports" class="uppercase">All Sports</a></li>
+									</ul>
+						</li>	
+						<li class=' '>
+									<a href="/theatre.aspx" title="Theatre">Theatre</a>
+						</li>	
+						<li class=' '>
+									<a href="/music.aspx" title="Music">Music</a>
+						</li>	
+						<li class=' '>
+									<a href="/comedy.aspx" title="Comedy">Comedy</a>
+						</li>	
+						<li class=' '>
+									<a href="/other.aspx" title="Other">Other</a>
+						</li>	
+			
+							<li><a href="https://mydonate.bt.com/charities/ticketsfortroops" target="_blank">Donate</a></li>
+						<li><a href="#" class="login-toggle">Login/Register</a></li>
+				</ul>
+
+	</header>
+
+
+			<div class="main">
+				
+
+
+	
+
+	<div class="mobile-only filter-tickets">
+			<span><em></em>Filter Tickets</span>
+		<a href="/search.aspx" title="Clear All">Clear All</a>
+	</div>
+	<div class="search-sidebar ">
+		
+		<form method="post" runat="server" id="ticket-finder" name="ticket-finder">
+			<h2>TICKET FINDER <a href="/search.aspx" title="Reset">Reset All</a></h2>
+			<h4>When?</h4>
+			<fieldset>				
+				<label for="search-period" class="has-select"><span>Time Period</span>
+					<div>
+						<select id="search-period" name="search-period">
+							<option value="">Choose Period</option>
+							<option value="/search.aspx?q=rock for heroes&start=2018-09-24&end=2018-09-24&c=&d=2000&origin=&sortby=&onsale=0&showall=&lat=0.0&lon=0.0">Today</option>
+							<option value="/search.aspx?q=rock for heroes&start=2018-09-25&end=2018-09-25&c=&d=2000&origin=&sortby=&onsale=0&showall=&lat=0.0&lon=0.0">Tomorrow</option>
+							<option value="/search.aspx?q=rock for heroes&start=2018-09-24&end=2018-10-01&c=&d=2000&origin=&sortby=&onsale=0&showall=&lat=0.0&lon=0.0">This Week</option>
+							<option value="/search.aspx?q=rock for heroes&start=2018-10-01&end=2018-10-08&c=&d=2000&origin=&sortby=&onsale=0&showall=&lat=0.0&lon=0.0">Next Week</option>
+							<option value="/search.aspx?q=rock for heroes&start=2018-09-24&end=2018-09-30&c=&d=2000&origin=&sortby=&onsale=0&showall=&lat=0.0&lon=0.0">This Month</option>
+							<option value="/search.aspx?q=rock for heroes&start=2018-10-01&end=2018-10-31&c=&d=2000&origin=&sortby=&onsale=0&showall=&lat=0.0&lon=0.0">Next Month</option>
+						</select>
+					</div>
+				</label>
+		
+				<label for="search-month" class="has-select"><span>Month</span>
+					<div>
+						<select id="search-month" name="search-month">
+							<option value="">Choose Month</option>
+									<option value="/search.aspx?q=rock for heroes&start=2018-09-01&end=2018-09-30&c=&d=2000&origin=&sortby=&onsale=0&showall=&lat=0.0&lon=0.0">September 2018</option>
+									<option value="/search.aspx?q=rock for heroes&start=2018-10-01&end=2018-10-31&c=&d=2000&origin=&sortby=&onsale=0&showall=&lat=0.0&lon=0.0">October 2018</option>
+									<option value="/search.aspx?q=rock for heroes&start=2018-11-01&end=2018-11-30&c=&d=2000&origin=&sortby=&onsale=0&showall=&lat=0.0&lon=0.0">November 2018</option>
+									<option value="/search.aspx?q=rock for heroes&start=2018-12-01&end=2018-12-31&c=&d=2000&origin=&sortby=&onsale=0&showall=&lat=0.0&lon=0.0">December 2018</option>
+									<option value="/search.aspx?q=rock for heroes&start=2019-01-01&end=2019-01-31&c=&d=2000&origin=&sortby=&onsale=0&showall=&lat=0.0&lon=0.0">January 2019</option>
+									<option value="/search.aspx?q=rock for heroes&start=2019-02-01&end=2019-02-28&c=&d=2000&origin=&sortby=&onsale=0&showall=&lat=0.0&lon=0.0">February 2019</option>
+									<option value="/search.aspx?q=rock for heroes&start=2019-03-01&end=2019-03-31&c=&d=2000&origin=&sortby=&onsale=0&showall=&lat=0.0&lon=0.0">March 2019</option>
+									<option value="/search.aspx?q=rock for heroes&start=2019-04-01&end=2019-04-30&c=&d=2000&origin=&sortby=&onsale=0&showall=&lat=0.0&lon=0.0">April 2019</option>
+									<option value="/search.aspx?q=rock for heroes&start=2019-05-01&end=2019-05-31&c=&d=2000&origin=&sortby=&onsale=0&showall=&lat=0.0&lon=0.0">May 2019</option>
+									<option value="/search.aspx?q=rock for heroes&start=2019-06-01&end=2019-06-30&c=&d=2000&origin=&sortby=&onsale=0&showall=&lat=0.0&lon=0.0">June 2019</option>
+									<option value="/search.aspx?q=rock for heroes&start=2019-07-01&end=2019-07-31&c=&d=2000&origin=&sortby=&onsale=0&showall=&lat=0.0&lon=0.0">July 2019</option>
+									<option value="/search.aspx?q=rock for heroes&start=2019-08-01&end=2019-08-31&c=&d=2000&origin=&sortby=&onsale=0&showall=&lat=0.0&lon=0.0">August 2019</option>
+						</select>
+					</div>
+				</label>
+				
+				<label class="choose-dates">Choose date(s)</label>
+				
+				<label for="start" class="search-date"><span>From</span>		
+					<input type="text" id="start" name="start" value="" />
+				</label>
+					
+				<label for="end" class="search-date last-of-type"><span>To</span>
+					<input type="text" id="end" name="end" value="" />
+				</label>
+					
+				<input type="submit" value="Set Date" class="set-date" />
+						
+				
+			</fieldset>
+					
+			<h4>Where?</h4>
+			<fieldset>
+				<label for="distance" class="has-select"><span>Distance</span>
+						<div>
+							<select id="distance" name="distance">
+									<option value="50">Select a radius</option>
+									<option value="1" >1 Mile</option>
+									<option value="5" >5 Miles</option>
+									<option value="10" >10 Miles</option>
+									<option value="20" >20 Miles</option>
+									<option value="30" >30 Miles</option>
+									<option value="50" >50 Miles</option>
+							</select>
+						</div>
+				</label>
+				<label for="location">
+					Location<br/>
+					<input type="text" id="location" name="location" value="" />
+					<input type="submit" id="set-location" value="Set" />					
+					
+	
+				</label>
+				<input type="hidden" name="latitude" id="latitude" />
+				<input type="hidden" name="longitude" id="longitude" />
+			</fieldset>
+					
+			<h4>What?</h4>					
+			<fieldset class="search-categories">
+				
+						<label for="sports"><input type="checkbox" value="1" id="sports" name="search-categories"  />Sports</label>
+								<div class="sub-categories">
+										<label for="sports-1"><input type="checkbox" value="7" id="sports-1" name="search-categories"  />Football</label>
+										<label for="sports-2"><input type="checkbox" value="8" id="sports-2" name="search-categories"  />Rugby</label>
+										<label for="sports-3"><input type="checkbox" value="9" id="sports-3" name="search-categories"  />Tennis</label>
+										<label for="sports-4"><input type="checkbox" value="10" id="sports-4" name="search-categories"  />Cricket</label>
+										<label for="sports-5"><input type="checkbox" value="11" id="sports-5" name="search-categories"  />Horseracing</label>
+										<label for="sports-6"><input type="checkbox" value="12" id="sports-6" name="search-categories"  />Other</label>
+								</div>
+						<label for="theatre"><input type="checkbox" value="2" id="theatre" name="search-categories"  />Theatre</label>
+						<label for="music"><input type="checkbox" value="3" id="music" name="search-categories"  />Music</label>
+						<label for="comedy"><input type="checkbox" value="4" id="comedy" name="search-categories"  />Comedy</label>
+						<label for="other"><input type="checkbox" value="6" id="other" name="search-categories"  />Other</label>
+	
+				<input type="hidden" value="true" name="searchsubmit" id="searchsubmit" />				
+				<input type="submit" value="Update" name="search" />				
+				<input type="submit" value="Filter Tickets" id="filter-tickets" class="mobile-only" />		
+			</fieldset>
+		</form>
+	</div>
+
+<div class="content">
+
+			<div class="search-header">	
+					<p>Showing search results for <strong>"rock for heroes"</strong> <span>(7)</span></p>
+				
+				<div class="sort-bar">				
+					<form method="post" runat="server">
+							<a href="/search.aspx?q=rock for heroes&start=&end=&c=&d=2000&origin=&sortby=&onsale=1&showall=t&lat=0.0&lon=0.0">
+								<input type="checkbox" name="availableonlych" id="availableonlych" />Available events <strong>only</strong>
+							</a>							
+			
+							<a href="/search.aspx?q=rock for heroes&start=&end=&c=&d=2000&origin=&sortby=&onsale=0&showall=t&lat=0.0&lon=0.0" title="Show All" class="show-all">Show All</a>
+								
+						<label for="sortby" class="has-select"><span>Sort by:</span>
+							<div>
+								<select id="sortby" name="sortby">
+									<option value="/search.aspx?q=rock for heroes&start=&end=&c=&d=2000&origin=&sortby=new&onsale=0&lat=0.0&lon=0.0" >What's New</option>
+									<option value="/search.aspx?q=rock for heroes&start=&end=&c=&d=2000&origin=&sortby=soonest&onsale=0&lat=0.0&lon=0.0" >Date (Soonest)</option>
+									<option value="/search.aspx?q=rock for heroes&start=&end=&c=&d=2000&origin=&sortby=furthest&onsale=0&lat=0.0&lon=0.0" >Date (Furthest)</option>
+									<option value="/search.aspx?q=rock for heroes&start=&end=&c=&d=2000&origin=&sortby=az&onsale=0&lat=0.0&lon=0.0" >A-Z</option>
+								</select>
+							</div>
+						</label>
+					</form>
+				</div>
+			</div>
+			<ul id="search-results" class="loading">
+					<li data-show="0" data-desktop-url="https://ticketsfortroops.seetickets.com/event/rock-for-heroes/civic-hall-bedworth/1267461?hash=C724F2F02F67B0E7B4B5ABC7A80C9B026BBBAA0B&ts=MTUzNzc3MzQ2NC4yOTk3NA2" data-mobile-url="https://ticketsfortroops.seetickets.com/event/rock-for-heroes/civic-hall-bedworth/1267461?hash=C724F2F02F67B0E7B4B5ABC7A80C9B026BBBAA0B&ts=MTUzNzc3MzQ2NC4yOTk3NA2" >
+					
+					
+							<div class="date">
+								<span class="day">Sat</span>
+								<span class="date-number">06</span>
+								<span>Oct 2018</span>
+							</div>
+							
+											
+						<div class="details">
+							
+													<div class="ticket-status buy-tickets launch-login"><a href="#" title="Rock For Heroes">Buy Tickets</a></div>
+										
+									<h2>Rock For Heroes</h2>
+																		
+								<h3>Civic Hall - Bedworth, Bedworth</h3>
+								<span>at 7:30 PM</span>
+					
+						</div>						
+					</li>
+					<li data-show="1" data-desktop-url="https://ticketsfortroops.seetickets.com/event/rock-for-heroes/kenneth-more-theatre/1267455?hash=F858F23254020C503DC62652CBF6F9BCA4CC3546&ts=MTUzNzc3MzQ2NC4yOTk3NA2" data-mobile-url="https://ticketsfortroops.seetickets.com/event/rock-for-heroes/kenneth-more-theatre/1267455?hash=F858F23254020C503DC62652CBF6F9BCA4CC3546&ts=MTUzNzc3MzQ2NC4yOTk3NA2" >
+					
+					
+							<div class="date">
+								<span class="day">Fri</span>
+								<span class="date-number">19</span>
+								<span>Oct 2018</span>
+							</div>
+							
+											
+						<div class="details">
+							<div class="ticket-status buy-tickets launch-login"><a href="#" title="Rock for Heroes">Buy Tickets</a></div>
+									<h2>Rock for Heroes</h2>
+								<h3>Kenneth More Theatre, London</h3>
+								<span>at 7:30 PM</span>
+					
+						</div>						
+					</li>
+			</ul>
+</div>
+
+
+    <script type="text/javascript">
+		var geocoder;
+	
+		function initialize() {
+		  geocoder = new google.maps.Geocoder();
+		}
+		
+		function codeAddress() {
+		  var address = "";
+		  
+		  if(address != ""){
+			 address += ", UK";
+		  }
+			
+		  var lon = document.getElementById("longitude");
+		  var lat = document.getElementById("latitude");
+			
+		  geocoder.geocode( { 'address': address}, function(results, status) {
+		    if (status == google.maps.GeocoderStatus.OK) {
+				var g = results[0].geometry.location.toString().replace("(","").replace(")","").replace(" ","").split(',');
+				
+				lon.value = g[0];
+				lat.value = g[1];
+				
+			}
+		  });
+		}
+	
+		
+		function updateAddress(){
+		  var address = document.getElementById("location").value + ", UK";
+		  var lon = document.getElementById("longitude");
+		  var lat = document.getElementById("latitude");
+						
+		  geocoder.geocode( { 'address': address}, function(results, status) {
+		    if (status == google.maps.GeocoderStatus.OK) {
+				var g = results[0].geometry.location.toString().replace("(","").replace(")","").replace(" ","").split(',');
+				
+				lon.value = g[0];
+				lat.value = g[1];
+				
+				//if( $("#clear-location").length > 0){
+				//	lon.value = "0.0";
+				//	lat.value = "0.0";
+				//}
+				
+				$("#ticket-finder").submit();
+			}
+		  });
+		}		
+		google.maps.event.addDomListener(window, 'load', initialize);
+		google.maps.event.addDomListener(window, 'load', codeAddress);
+		
+		$(document).ready(function(){
+			$("#set-location").click(function(e){
+				e.preventDefault();
+				updateAddress();
+			});
+			$("#location").keypress(function(e){
+				if(e.which == 13) {
+					updateAddress();
+				}
+			});			
+		});
+    </script>
+
+
+
+	
+	
+
+	
+
+			</div>
+				<footer>
+		<a href="/" title="Tickets For Troops" class="footer-logo">Tickets For Troops</a>
+			<div>
+				<h2>Go to</h2>
+				<ul>
+						<li><a href="/home.aspx" title="Home">Home</a></li>	
+						<li><a href="/sports.aspx" title="Sports">Sports</a></li>	
+						<li><a href="/theatre.aspx" title="Theatre">Theatre</a></li>	
+						<li><a href="/music.aspx" title="Music">Music</a></li>	
+						<li><a href="/comedy.aspx" title="Comedy">Comedy</a></li>	
+						<li><a href="/other.aspx" title="Other">Other</a></li>	
+				</ul>
+			</div>
+	
+			<div>	
+				<h2>Key Links</h2>
+				<ul>
+						<li><a href="/how-it-works.aspx" title="How it works">How it works</a></li>	
+						<li><a href="/faqs.aspx" title="FAQs">FAQs</a></li>	
+						<li><a href="/about-us.aspx" title="About Us">About Us</a></li>	
+						<li><a href="/gallery.aspx" title="Gallery">Gallery</a></li>	
+						<li><a href="/supporters.aspx" title="Supporters">Supporters</a></li>	
+						<li><a href="/news.aspx" title="News">News</a></li>	
+						<li><a href="/contact.aspx" title="Contact">Contact</a></li>	
+						<li><a href="/cancellation.aspx" title="Cancellation">Cancellation</a></li>	
+				</ul>
+			</div>
+		
+		<div>
+			<h2>Contact Us</h2>
+				<p><strong>CALL US:</strong> <span>0207 932 0808 </span></p>
+				<p><strong>GENERAL ENQUIRIES:</strong><br/><a href="mailto:info@ticketsfortroops.org.uk" title="info@ticketsfortroops.org.uk">info@ticketsfortroops.org.uk</a></p>
+				<p><strong>CANCELLATIONS:</strong><br/><a href="mailto:cancellations@ticketsfortroops.org.uk" title="cancellations@ticketsfortroops.org.uk">cancellations@ticketsfortroops.org.uk</a></p>
+				<p><strong>TICKET DONATIONS:</strong><br/><a href="mailto:events@ticketsfortroops.org.uk" title="events@ticketsfortroops.org.uk">events@ticketsfortroops.org.uk</a></p>
+		</div>
+	
+		<div class="footer-social">
+			<h2>TFT Social</h2>
+			
+<a href="http://www.facebook.com/ticketsfortroops" title="Like Us on Facebook" target="_blank" class="facebook"><em></em>on <strong>Facebook</strong> &raquo;</a><a href="http://www.twitter.com/tickets4troops" title="Follow Us on Twitter" target="_blank" class="twitter"><em></em>on <strong>Twitter</strong> &raquo;</a><a href="https://www.instagram.com/ticketsfortroops" title="Follow Us on Instagram" target="_blank" class="linkedin"><em></em>on <strong>Instagram</strong> &raquo;</a>
+		</div>
+		<div class="sub-footer">
+			<span>&copy; 2018. Tickets for Troops is a registered charity (no 1133386)</span>
+				<ul>
+						<li><a href="/accessibility.aspx" title="Accessibility">Accessibility</a></li>	
+						<li><a href="/privacy-policy.aspx" title="Privacy Policy">Privacy Policy</a></li>	
+						<li><a href="/terms-and-conditions.aspx" title="Terms and Conditions">Terms and Conditions</a></li>	
+						<li><a href="/cookies.aspx" title="Cookies">Cookies</a></li>	
+						<li><a href="/sitemap.aspx" title="Sitemap">Sitemap</a></li>	
+				</ul>
+			<a href="http://www.anotherstory.co" title="Brand Communications Agency, Manchester" target="_blank">AnotherStory</a>
+		</div>
+	</footer>	
+
+			
+		</div>
+		
+		
+	<div class="login-popup">
+		<div>
+			<h2>LOGIN</h2>
+			<p>To book tickets you must be logged in!</p>
+			<form class="login-form " method="post">
+					<fieldset>
+						<p>
+							<label for="name-popup"><strong>Email Address: </strong><input id="name-popup" name="name-popup" type="text" value="" /></label>
+						</p>
+						<p>
+							<label for="password-popup"><strong>Password: </strong><input id="password-popup" name="password-popup" type="password" /></label>
+						</p>
+				  
+						<div class="form-actions">
+							<input type="hidden" name="returnUrl" id="returnUrl" />
+							<input type="hidden" value="true" name="loginpopup" id="loginpopup" />
+							<input name="submit-popup" type="submit" value="Login" class="login-submit" />
+							<label for="rememberMe-popup">
+								<input id="rememberMe-popup" name="rememberMe-popup" title="Remember Me" type="checkbox"  />
+								Remember Me
+							</label>
+							<a href="/forgot-password" title="Forgot your password?">Forgot your password?</a>
+							<a href="/register" title="Register">Register</a>
+						</div>
+					</fieldset>
+				<em class="hide-login">Close</em>
+			</form>
+		</div>
+	</div>
+	
+	
+		<script src="/scripts/plugins.js"></script>
+		<script src="/scripts/vendor/minicart.js"></script>
+		
+
+		<script>
+			PAYPAL.apps.MiniCart.render({
+				events: {
+					afterRemoveFromCart: function(data) {
+						$(".cart-toggle em").text( "[" + $("#PPMiniCart li").length + "]");
+						if($("#PPMiniCart li").length == 0){
+							$("#shopping-basket").slideToggle();
+							$(".cart-toggle").fadeOut().removeClass(".cart-open");
+						}
+					},
+					onAddToCart: function (data) {
+						$(".cart-toggle em").text( "[" + $("#PPMiniCart li").length + "]");
+					}
+				}
+			});
+		</script> 
+	
+		<script src="/scripts/main.js"></script>
+	
+		<a href="#" class="back-to-top" title="Back to top"><em></em>Back to top</a>
+		
+	
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> or <a href="https://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+	
+					<script type="text/javascript">
+				var _gaq = _gaq || [];
+				_gaq.push(['_setAccount', 'UA-17376465-1']);
+				_gaq.push(['_setDomainName', 'none']);
+				_gaq.push(['_setAllowLinker', true]);
+				_gaq.push(['_trackPageview']);
+				(function() {
+					var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+					ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+				})();
+			</script>
+
+		<script type="text/javascript">
+		  var _sf_async_config = { uid: 59434, domain: 'ticketsfortroops.org.uk', useCanonical: true };
+		  (function() {
+			function loadChartbeat() {
+			  window._sf_endpt = (new Date()).getTime();
+			  var e = document.createElement('script');
+			  e.setAttribute('language', 'javascript');
+			  e.setAttribute('type', 'text/javascript');
+			  e.setAttribute('src','//static.chartbeat.com/js/chartbeat.js');
+			  document.body.appendChild(e);
+			};
+			var oldonload = window.onload;
+			window.onload = (typeof window.onload != 'function') ?
+			  loadChartbeat : function() { oldonload(); loadChartbeat(); };
+		  })();
+		</script>
+    </body>
+</html>
