@@ -2,6 +2,7 @@ package collier.jordan.projects.tftpoller;
 
 import collier.jordan.projects.tftpoller.logic.ResponseProcessor;
 import collier.jordan.projects.tftpoller.model.Event;
+import collier.jordan.projects.tftpoller.model.exception.NoTicketsAvailable;
 import org.jsoup.Jsoup;
 import org.junit.Before;
 import org.junit.Test;
@@ -17,7 +18,6 @@ import java.io.IOException;
 public class TftPollerApplicationTests {
 
     Event event_1;
-    Event event_2;
 
     @Before
     public void setUp() {
@@ -29,7 +29,7 @@ public class TftPollerApplicationTests {
     }
 
     @Test
-	public void responseProcessortest() throws IOException {
+	public void responseProcessortest() throws IOException, NoTicketsAvailable {
         ResponseProcessor document = new ResponseProcessor(
                 Jsoup.parse(new File("src/test/resources/Search_TicketsforTroops.html"), "UTF-8")
         );
@@ -39,4 +39,15 @@ public class TftPollerApplicationTests {
         assertEquals(event_1.toString(), testEvent.toString());
 	}
 
+	@Test
+    public void noTicketsAvailableTest() throws IOException {
+        ResponseProcessor document = new ResponseProcessor(
+                Jsoup.parse(new File("src/test/resources/Search_TicketsForTroopsNoTicketsAvailable.html"), "UTF-8")
+        );
+        try {
+            document.getEvents();
+        } catch(NoTicketsAvailable e) {
+           assertEquals("No tickets avalable for group.", e.getMessage());
+        }
+    }
 }
