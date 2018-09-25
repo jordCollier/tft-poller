@@ -9,7 +9,8 @@ public class TftPoller {
 
     @Scheduled(cron = "${scheduler.cronValue}")
     public void pollTft() {
-
+    //#TODO Schedule the polling job with get request as seen below and cast to Document object
+        //#TODO or poll TFT using URI.
     }
 
     public String sendGetrequest(String groupName) {
